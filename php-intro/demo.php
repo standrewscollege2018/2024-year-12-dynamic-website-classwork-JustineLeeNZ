@@ -11,9 +11,14 @@
     <?php
       echo "<h2>Hello world</h2>";  
 
+      $name = "Mrs Lee";
+      echo "<p>My favourite teacher is ", $name, " and she is awesome!</p>";
+      
+
     ?>
 
-    <p><a href="get.php?number=1">Send a number to another page</a></p>
+    <p><a href="get.php?number=1">Send a number (1) to another page</a></p>
+    <p><a href="get.php?number=2">Send a number (2)to another page</a></p>
     <p><a href="get.php?text='Mrs Lee is cool'">Send a string to another page</a></p>
 
 
