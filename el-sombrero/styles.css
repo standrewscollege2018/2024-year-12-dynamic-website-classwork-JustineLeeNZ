@@ -1,0 +1,219 @@
+/* set all padding and margins to zero */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* general page styles */
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: Verdana, Arial, Helvetics, sans-serif;
+}
+
+/* makes sure images resize nicely */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: rgb(199, 0, 0);
+}
+
+
+/* navbar styles */
+.navbar-container {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+.navbar-text {
+  background-color: rgb(249, 193, 38);
+  color: rgb(199, 0, 0);
+  font-size: 40px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+
+}
+
+/* sets default styles for links */
+a {
+  color: rgb(199, 0, 0);
+}
+
+a:link {
+    color: rgb(199, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(199, 0, 0);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(199, 0, 0);
+    text-decoration: none;
+}
+
+
+/* footer styles */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(249, 193, 38);
+}
+
+.footer-text {
+  color: rgb(199, 0, 0);
+  font-size: 24px;
+}
+
+.hours {
+  text-align: left;
+  padding: 10px 0 10px 20px;
+
+}
+
+.address {
+  text-align: right;
+  padding: 10px 20px 10px 0;
+
+}
+
+
+/* menu styles */
+/*  used in several pages */
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+/* left hand column containing links to courses */
+.left-col {
+  background-color: rgb(199, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 20px 10px 20px 20px;
+
+}
+
+/*  right hand column containing info for selected course */
+.right-col {
+  grid-column: span 3;
+  padding: 20px 0 10px 10px;
+
+}
+
+/* styles for links in left hand column */
+.left-col ul {
+  list-style-type: none;
+
+}
+
+.left-col ul li {
+    padding: 10px 10px 10px 10px;
+}
+
+.left-col a {
+
+  color: rgb(255, 255, 255);
+
+}
+
+/* style for course name at top of right hand column */
+.course-name {
+  color: rgb(199, 0, 0);
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+/* styles for individual menu items */
+.menu-item {
+  padding-bottom: 20px;
+  font-size: 20px;
+
+}
+
+
+.item-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.item-desc {
+  font-style: italic;
+
+}
+
+.item-price {
+  color: rgb(199, 0, 0);
+  font-weight: bold;
+}
+
+/* about page styles */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+}
+
+.owner {
+  background-color: rgb(199, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 20px 20px 20px 20px;
+
+}
+
+.about-details {
+  grid-column: span 3;
+  padding: 20px 0 10px 10px;
+
+}
+
+.about-details p {
+  margin-bottom: 15px;
+}
+
+/* makes sure image resizes nicely */
+.owner > img {
+  max-width: 100%
+  height: auto;
+}
+
+/* gallery styles */
+.gallery-container {
+  display : grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-card {
+  border: solid;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 5px;
+  margin: 5px;
+}
+
+.gallery-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.gallery-text {
+  color: rgb(199, 0, 0);
+  font-size: 18px;
+}
+
+/* location styles */
+.location-content {
+  margin: 20px 10px 20px 10px;
+}
